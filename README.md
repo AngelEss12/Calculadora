@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+# 🧮 Calculadora React con useReducer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de calculadora básica construido con **React**, **TypeScript**, **Vite** y **TailwindCSS**, utilizando el hook `useReducer` para manejar el estado de la aplicación de manera más estructurada.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- [React]
+- [TypeScript]
+- [Vite]
+- [TailwindCSS]
+- `useReducer` para el manejo del estado
+- ESLint y Type-checked configs
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## ⚙️ Instalación
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Clona el repositorio:
+   git clone https://github.com/tuusuario/calculadora-useReducer.git
+   cd calculadora-useReducer
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. Instala las dependecias   
+    npm install
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+3. Ejecuta el servidor de desarrollo:
+    npm run dev
+
+# ✨ Funcionalidades
+✔️ Números del 0 al 9
+✔️ Operaciones: suma, resta, multiplicación y división
+✔️ Botón de limpiar (Limpiar)
+✔️ Botón de retroceso (DEL)
+✔️ Evaluación de operaciones con =
+✔️ Soporte para decimales (.)
+
+# 🖼️ Interfaz
+- Input de visualización en la parte superior.
+- Botones numéricos y de operaciones en una cuadrícula.
+- Botones destacados para Limpiar y DEL.

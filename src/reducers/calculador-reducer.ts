@@ -1,5 +1,3 @@
-
-
 export type CalculadorActionType =
     { type: "SET_INPUT_VALUE", payload: { value: string | number } } |
     { type: "DELETE_DIGIT" } |
